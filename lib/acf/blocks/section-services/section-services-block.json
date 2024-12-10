@@ -1,0 +1,22 @@
+{
+  "name": "section-Programs",
+  "title": "Programs",
+  "description": "Briefly highlight the Programs that you offer.",
+  "category": "sections",
+  "icon": "admin-tools",
+  "apiVersion": 2,
+  "keywords": [
+    "Program Hero",
+    "Program",
+    "Programs"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./lib/acf/blocks/section-services/section-services.php"
+  },
+  "supports": {
+    "align": true,
+    "anchor": true,
+    "defaultStylePicker": false
+  }
+}

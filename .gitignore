@@ -1,0 +1,9 @@
+node_modules/
+/vendor/
+/assets/
+/dist/
+cache/
+_files/
+.idea/
+.DS_Store
+.env

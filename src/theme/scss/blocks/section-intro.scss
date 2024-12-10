@@ -1,0 +1,13 @@
+.section-intro { 
+	&.section-intro--style-v3 { 
+ 		.section-intro { 
+ 			&__main { 
+ 				max-width: 100%; 
+ 			} 
+ 
+ 			&__title { 
+ 			max-width: 70%; 
+ 			} 
+ 		} 
+	} 
+}

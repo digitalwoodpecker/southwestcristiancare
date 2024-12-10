@@ -1,0 +1,28 @@
+// Paddings
+$padding-default: rem(120);
+$padding-default-tablet: rem(60);
+$padding-large: rem(160);
+$padding-large-tablet: rem(80);
+$padding-small: rem(80);
+$padding-small-tablet: rem(40);
+
+
+
+// Transitions
+$transition-duration-default: 0.3s;
+$transition-delay-default: 0.3s;
+$transition-default: 0.3s ease-in-out;
+
+
+// Breakpoints
+$breakpoint-xxl: 1720px;
+$breakpoint-xxm: 1440px;
+$breakpoint-xl: 1280px;
+$breakpoint-lg: 1025px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 576px;
+
+
+// Other
+$headerHeightDesktop: rem(112);
+$headerHeightTablet: rem(60);

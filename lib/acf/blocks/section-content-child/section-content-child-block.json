@@ -1,0 +1,19 @@
+{
+  "name": "content-child",
+  "title": "Content Child",
+  "description": "Make your first impression.",
+  "category": "sections",
+  "apiVersion": 2,
+  "keywords": [
+    "content"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./lib/acf/blocks/section-content-child/section-content-child.php"
+  },
+  "supports": {
+    "align": true,
+    "anchor": true,
+    "defaultStylePicker": false
+  }
+}

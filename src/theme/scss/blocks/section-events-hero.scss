@@ -1,0 +1,9 @@
+.theme-light{
+    .section-events-hero{
+        &.section-events-hero--style-v1{
+            .events-card::before {
+                background-color: rgba(var(--color-lt-accent-2-RGB), 0.4);
+            }
+        }
+    }
+}

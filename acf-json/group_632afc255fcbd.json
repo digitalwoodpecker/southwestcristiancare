@@ -1,0 +1,361 @@
+{
+    "key": "group_632afc255fcbd",
+    "title": "Block: Services Options",
+    "fields": [
+        {
+            "key": "service_hero_section_message_key",
+            "label": "",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<span class=\"custom-message-container\"><span class=\"custom-message-icon\">&#8505;<\/span><span class=\"custom-message\"><a href=\"\/wp-admin\/edit.php?post_type=service\">Click here<\/a> to edit the services.<\/span><\/span>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "service_hero_section_choose-variants_key",
+            "label": "Section Style",
+            "name": "services_section_choose-variants",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "v1": "<img src=.\/..\/wp-content\/themes\/harbinger-marketing-template\/dist\/admin\/img\/block-previews\/block-preview-section-service-hero-v1.jpg>",
+                "v2": "<img src=.\/..\/wp-content\/themes\/harbinger-marketing-template\/dist\/admin\/img\/block-previews\/block-preview-section-service-hero-v2.jpg>",
+                "v3": "<img src=.\/..\/wp-content\/themes\/harbinger-marketing-template\/dist\/admin\/img\/block-previews\/block-preview-section-service-hero-v3.jpg>",
+                "v4": "<img src=.\/..\/wp-content\/themes\/harbinger-marketing-template\/dist\/admin\/img\/block-previews\/block-preview-section-service-hero-v4.jpg>",
+                "v5": "<img src=.\/..\/wp-content\/themes\/harbinger-marketing-template\/dist\/admin\/img\/block-previews\/block-preview-section-services.jpg>"
+            },
+            "default_value": "v1",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "horizontal",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_63e0fd14a10bf",
+            "label": "Use Programs Background",
+            "name": "use_services_background",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "service_hero_section_choose-variants_key",
+                        "operator": "==",
+                        "value": "v4"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "enabled": "Enabled",
+                "disabled": "Disabled"
+            },
+            "default_value": "enabled",
+            "return_format": "value",
+            "allow_null": 0,
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_6356a5f3b7a67",
+            "label": "",
+            "name": "services_section_background",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_63e0fd14a10bf",
+                        "operator": "!=",
+                        "value": "enabled"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_632b03dbc9b52"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1,
+            "acfe_seamless_style": 1,
+            "acfe_clone_modal": 0,
+            "acfe_clone_modal_close": 0,
+            "acfe_clone_modal_button": "",
+            "acfe_clone_modal_size": "large"
+        },
+        {
+            "key": "service_hero_section_title_key",
+            "label": "Section Title",
+            "name": "services_section_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Services",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_63495a7e98e7e",
+            "label": "Section Subtitle",
+            "name": "services_section_subtitle",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "service_hero_section_choose-variants_key",
+                        "operator": "==",
+                        "value": "v5"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_638496663f18b",
+            "label": "Programs",
+            "name": "services_section_group",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "acfe_seamless_style": 0,
+            "acfe_group_modal": 0,
+            "sub_fields": [
+                {
+                    "key": "field_635a2ab32d895",
+                    "label": "Programs Filter",
+                    "name": "services_filter_posts",
+                    "aria-label": "",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "service_hero_section_choose-variants_key",
+                                "operator": "!=",
+                                "value": "v2"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "all": "All",
+                        "by_location": "By Location",
+                        "custom": "Custom"
+                    },
+                    "default_value": "all",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "layout": "horizontal"
+                },
+                {
+                    "key": "field_6374d32de2561",
+                    "label": "Program Filter",
+                    "name": "services_filter_posts_short",
+                    "aria-label": "",
+                    "type": "button_group",
+                    "instructions": "This style of the section can contain no more than 8 services.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "service_hero_section_choose-variants_key",
+                                "operator": "==",
+                                "value": "v2"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "all": "All",
+                        "by_location": "By Location",
+                        "custom": "Custom"
+                    },
+                    "default_value": "all",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "layout": "horizontal"
+                },
+                {
+                    "key": "field_6352977c63699",
+                    "label": "Select Program",
+                    "name": "services_section_services",
+                    "aria-label": "",
+                    "type": "relationship",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "service_hero_section_choose-variants_key",
+                                "operator": "!=",
+                                "value": "v2"
+                            },
+                            {
+                                "field": "field_635a2ab32d895",
+                                "operator": "==",
+                                "value": "custom"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": "",
+                    "taxonomy": "",
+                    "filters": [
+                        "search"
+                    ],
+                    "return_format": "object",
+                    "acfe_bidirectional": {
+                        "acfe_bidirectional_enabled": "0"
+                    },
+                    "min": "",
+                    "max": "",
+                    "elements": ""
+                },
+                {
+                    "key": "field_635a36b7ea47f",
+                    "label": "Select Program",
+                    "name": "services_section_services_short",
+                    "aria-label": "",
+                    "type": "relationship",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "service_hero_section_choose-variants_key",
+                                "operator": "==",
+                                "value": "v2"
+                            },
+                            {
+                                "field": "field_6374d32de2561",
+                                "operator": "==",
+                                "value": "custom"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "program"
+                    ],
+                    "taxonomy": "",
+                    "filters": [
+                        "search"
+                    ],
+                    "return_format": "object",
+                    "acfe_bidirectional": {
+                        "acfe_bidirectional_enabled": "0"
+                    },
+                    "min": "",
+                    "max": 8,
+                    "elements": ""
+                }
+            ],
+            "acfe_group_modal_close": 0,
+            "acfe_group_modal_button": "",
+            "acfe_group_modal_size": "large"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/section-programs"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1732526465
+}
